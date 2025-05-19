@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".QuizActivity">
+
+    <Button
+        android:id="@+id/true_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#1E88E5"
+        android:text="True"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/false_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/false_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#D81B60"
+        android:text="False"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/true_button"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="129dp"
+        android:fontFamily="serif"
+        android:text="Introvert Studies"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FBFBFB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/question_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="#6FBDC7"
+        android:text="Score Board "
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/false_button"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toTopOf="@+id/true_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

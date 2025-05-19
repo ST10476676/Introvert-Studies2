@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <!-- Circular Image -->
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="370dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="Introvert Studies"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="269dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        app:shapeAppearanceOverlay="@style/CircleImageStyle"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="217dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="cursive"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.193"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="181dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="@color/black"
+        android:text="Start"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

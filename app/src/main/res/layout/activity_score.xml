@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:textAlignment="center"
+    tools:context=".Score">
+
+    <TextView
+        android:id="@+id/name3TextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="serif"
+        android:text="Introvert Studies"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FBFBFB"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scoreTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/motivationTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name3TextView" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="214dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="89dp"
+        android:backgroundTint="#D81B60"
+        android:text="Exit"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewTextView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/motivationTextView"
+        android:layout_width="219dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/reviewTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreTextView" />
+
+    <TextView
+        android:id="@+id/reviewTextView"
+        android:layout_width="329dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="55dp"
+        android:textColor="#FAF8F8"
+        app:layout_constraintBottom_toTopOf="@+id/restartButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivationTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
